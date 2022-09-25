@@ -1,12 +1,12 @@
 import config
-import pypyodbc
+import pyodbc
 
 def connect_to_odbc():
     con_str = f'DSN={config.DSN};Database={config.DATABASE};UID={config.UID};PWD={config.PWD};'
     try:
-        db = pypyodbc.connect(con_str)
+        db = pyodbc.connect(con_str)
         print("Connection to ODBC successful.")
-    except pypyodbc.Error as e:
+    except pyodbc.Error as e:
         db = None
         print("Connection to ODBC failed. \n" + str(e))
     return db
