@@ -31,4 +31,4 @@ Open the **ODBC Data Source 64bit** program
 ### 5 ) Install pypyodbc
 Type this into your **terminal/cmd**
 ```bash
-pip install pypyodbc
+pip install pyodbc
